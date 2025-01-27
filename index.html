@@ -1,4 +1,33 @@
-<p> This is a new repo</p>
-<p> This is a new feature (dropdown)</p>
-<p> This is a new feature (button)</p>
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Form</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="form-container">
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+      <h2>Student Information Form</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="rollNo">Roll No:</label>
+      <input type="text" id="rollNo" name="rollNo" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone No:</label>
+      <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+
+      <label for="image">Upload Image:</label>
+      <input type="file" id="image" name="image" accept="image/*" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
 
